@@ -1,6 +1,6 @@
 # OSK: On-Screen Keylogger
 
-Traditional user-land keyloggers usually perform Windows Hooking (SetWindowsHookEx) or Polling (GetAsyncKeyState, GetKeyboardState) to capture the keystrokes. These methods have one common hurdle to overcome; which is User Interface Privilege Isolation (UIPI). This also means that if your keylogger is running in with normal rights (medium integrity level), there is no way to capture keystrokes being entered to a higher privilege process (i.e., high/system integrity level). However, if your keylogger has UiAccess flag enabled, you are able to overcome this issue.
+Traditional user-land keyloggers usually perform Windows Hooking (SetWindowsHookEx) or Polling (GetAsyncKeyState, GetKeyboardState) to capture the keystrokes. These methods have one common hurdle to overcome; which is User Interface Privilege Isolation (UIPI). This also means that if your keylogger is running with normal rights (medium integrity level), there is no way to capture keystrokes being entered to a higher privilege process (i.e., high/system integrity level). However, if your keylogger has UiAccess flag enabled, you are able to overcome this issue.
 
 When it comes to UiAccess, most people will think of UI Automation (e.g., automatically sending keystrokes/mouse inputs to application). However, by having UiAccess rights, you can go [beyond sending inputs to interfaces](https://medium.com/@im-jqueue/uiaccess-and-uipi-beyond-sending-inputs-to-interfaces-db9efbd8b339).
 
