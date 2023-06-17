@@ -30,6 +30,8 @@ In the following demo, I have configured the environment such that elevation pro
 There is a [hurdle](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-account-control-allow-uiaccess-applications-to-prompt-for-elevation-without-using-the-secure-desktop) that I can't seem to overcome, but maybe you can 😃.
 
 ### Disclaimer
-This project is intended solely for **educational purposes only** and in no manner supports any illegal activities. It is to showcase what can be done when your keylogger has UiAccess flag enabled. However, you may modify/enhance the code to further explore UiAccess capabilities (e.g., sending keystrokes to higher privileged GUI to perform privilege escalation OR injecting osksupport.dll into ctfmon.exe through SetWindowsHookEx so that osk.exe is not in the process list).
+This project is intended solely for **educational purposes only** and in no manner supports any illegal activities. It is to showcase what can be done when your keylogger has UiAccess flag enabled. However, you may modify/enhance the code to further explore UiAccess capabilities (e.g., sending keystrokes to higher privileged GUI to perform privilege escalation OR injecting osksupport.dll into ctfmon.exe through SetWindowsHookEx so that osk.exe is not in the process list). 
+
+I have also written a short article [here](https://medium.com/@im-jqueue/uiaccess-and-uipi-beyond-sending-inputs-to-interfaces-db9efbd8b339) to showcase how you can perform DLL injection (as an Administrator) from a medium integrity process to a high integrity process.
 
 
